@@ -1,0 +1,83 @@
+@import "../../global";
+.intro {
+  display: flex;
+  overflow: hidden;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    .image {
+      background-color: crimson;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      @include mobile {
+        align-items: flex-start;
+      }
+      img {
+        height: 90%;
+        @include mobile {
+          height: 60%;
+        }
+      }
+    }
+  }
+  .right {
+    background-color: #fff;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    position: relative;
+    @include mobile {
+      padding-left: 0;
+      text-align: center;
+    }
+    .text {
+      h3 {
+        font-size: 35px;
+        @include mobile {
+          font-size: 30px;
+        }
+      }
+      h2 {
+        font-size: 60px;
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h4 {
+        font-size: 30px;
+        @include mobile {
+          font-size: 25px;
+        }
+        span {
+          color: crimson;
+        }
+      }
+    }
+    img {
+      width: 30px;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: blink 2s infinite;
+
+      @keyframes blink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

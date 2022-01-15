@@ -1,0 +1,77 @@
+@import "../../global";
+
+header {
+  background-color: #fff;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  .container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        // color: blue;
+        font-size: 30px;
+        a {
+        }
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        span {
+          margin-left: 25px;
+          display: flex;
+          align-items: center;
+        }
+        .icon {
+          margin-right: 10px;
+          font-size: 25px;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+    .right {
+      .humbrogor {
+        cursor: pointer;
+        span {
+          display: block;
+          background-color: $mainColor;
+          height: 3px;
+          margin: 8px 0;
+          width: 35px;
+          transition: 1s;
+        }
+      }
+    }
+  }
+  &.active {
+    background-color: $mainColor;
+    color: #fff;
+    .right {
+      .humbrogor {
+        span {
+          background-color: #fff;
+          &:first-child {
+            transform: translateY(11px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            transform: translateY(-11px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
