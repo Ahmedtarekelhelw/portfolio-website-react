@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.scss";
+import contact from "../../assets/shake.svg";
 
 export default function Contact() {
   const [submit, setSubmit] = useState(false);
@@ -11,7 +12,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="./portfolio-website-react/assets/shake.svg" alt="shake" />
+        <img src={contact} alt="shake" />
       </div>
       <div className="right">
         <div className="form">
