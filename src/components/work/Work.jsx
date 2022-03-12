@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./style.scss";
-
+import arrow from "../../assets/arrow.png";
+import mobile from "../../assets/mobile.png";
+import globe from "../../assets/globe.png";
+import writing from "../../assets/writing.png";
 export default function Work() {
   const [current, setCurrent] = useState(0);
   let handelClick = (e) => {
@@ -14,21 +17,21 @@ export default function Work() {
   const data = [
     {
       id: "1",
-      icon: "./portfolio-website-react/assets/mobile.png",
+      icon: mobile,
       title: "Web Design",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
       img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     },
     {
       id: "2",
-      icon: "./portfolio-website-react/assets/globe.png",
+      icon: globe,
       title: "Mobile Application",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
     {
       id: "3",
-      icon: "./portfolio-website-react/assets/writing.png",
+      icon: writing,
       title: "Branding",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
@@ -63,14 +66,14 @@ export default function Work() {
       </div>
 
       <img
-        src="./portfolio-website-react/assets/arrow.png"
+        src={arrow}
         alt="arrow-left"
         className="arrow-left"
         onClick={handelClick}
       />
 
       <img
-        src="./portfolio-website-react/assets/arrow.png"
+        src={arrow}
         alt="arow-right"
         className="arrow-right"
         onClick={handelClick}
