@@ -15,7 +15,7 @@ function App() {
         <Sidebar setActive={(bool) => setActive(bool)} active={active} />
         <div className="sections">
           <Routes>
-            <Route path="/portfolio-website-react/" element={<Index />} />
+            <Route path="/portfolio-website-react" element={<Index />} />
           </Routes>
         </div>
       </div>

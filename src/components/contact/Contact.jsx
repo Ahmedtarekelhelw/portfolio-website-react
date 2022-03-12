@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="./assets/shake.svg" alt="shake" />
+        <img src="./portfolio-website-react/assets/shake.svg" alt="shake" />
       </div>
       <div className="right">
         <div className="form">

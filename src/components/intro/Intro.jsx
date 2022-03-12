@@ -15,7 +15,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="image">
-          <img src="./assets/man.png" alt="inro" />
+          <img src="./portfolio-website-react/assets/man.png" alt="inro" />
         </div>
       </div>
       <div className="right">
@@ -27,7 +27,7 @@ export default function Intro() {
           </h4>
         </div>
         <a href="#protofolio">
-          <img src="./assets/down.png" alt="down" />
+          <img src="./portfolio-website-react/assets/down.png" alt="down" />
         </a>
       </div>
     </div>

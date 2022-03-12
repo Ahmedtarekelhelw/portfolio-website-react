@@ -8,7 +8,7 @@ export default function Testimonials() {
       name: "Tom Durden",
       title: "Senior Developer",
       img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+      icon: "./portfolio-website-react/assets/twitter.png",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
     },
     {
@@ -16,7 +16,7 @@ export default function Testimonials() {
       name: "Alex Kalinski",
       title: "Co-Founder of DELKA",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+      icon: "./portfolio-website-react/assets/youtube.png",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
       featured: true,
     },
@@ -25,7 +25,7 @@ export default function Testimonials() {
       name: "Martin Harold",
       title: "CEO of ALBI",
       img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
+      icon: "./portfolio-website-react/assets/linkedin.png",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
     },
   ];
@@ -36,7 +36,10 @@ export default function Testimonials() {
         {data.map((card) => (
           <div className="card" key={card.id}>
             <div className="head">
-              <img src="./assets/right-arrow.png" alt="arrow" />
+              <img
+                src="./portfolio-website-react/assets/right-arrow.png"
+                alt="arrow"
+              />
               <img src={card.img} alt="" />
               <img src={card.icon} alt="icon" />
             </div>
